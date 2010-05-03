@@ -1,15 +1,25 @@
 # perlin
 
-FIXME: write description
+A clojure implementation of Ken Perlin's improved noise algorithm
+
+This is a straight line for line conversion without any optimisations
 
 ## Usage
 
-FIXME: write
+(noise x y z)
 
 ## Installation
 
-FIXME: write
+execute:
+        lein deps
+        lein compile-java
+before running any of the tests
 
 ## License
 
-FIXME: write
+ImprovedNoise.java is released under whatever Ken Perlin says
+
+Everything else is Copyright (c) 2010 Inderjit Gill
+Released under an MIT license. See the file COPYING.
+
+
