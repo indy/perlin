@@ -51,12 +51,12 @@
 
 (defn noise 
   [x y z]
-  (let [X (bit-and (int (. Math floor x)) 255)
-        Y (bit-and (int (. Math floor y)) 255)
-        Z (bit-and (int (. Math floor z)) 255)
-        xx (- x (. Math floor x))
-        yy (- y (. Math floor y))
-        zz (- z (. Math floor z))
+  (let [X (bit-and (floor x) 255)
+        Y (bit-and (floor y) 255)
+        Z (bit-and (floor z) 255)
+        xx (- x (floor x))
+        yy (- y (floor y))
+        zz (- z (floor z))
         u (fade xx)
         v (fade yy)
         w (fade zz)
